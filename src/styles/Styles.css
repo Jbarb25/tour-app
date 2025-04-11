@@ -1,0 +1,83 @@
+
+img {
+    border: 10px solid #ccc; /* Frame color */
+    padding: 10px; /* Space between the image and the frame */
+    background-color: #fff; /* Background color inside the frame */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    border-radius: 5px; /* Optional: Rounded corners for the frame */
+  }
+
+  button.read-more {
+    background-color: #11d4f2; /* Light blue background */
+    color: #3f28ef; /* Black text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+
+  button.read-more:hover {
+    box-shadow: 0 4px 8px rgba(31, 9, 227, 0.563); /* Add shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+
+  button.buttonRemove {
+    background-color: #ee376e; /* Light blue background */
+    color: #9c0909; /* Black text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  }
+
+  button.buttonRemove:hover {
+    box-shadow: 0 4px 8px rgba(186, 4, 28, 0.795); /* Add shadow on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+  }
+
+  body {
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    min-height: 10vh; /* Ensure the body takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+    font-family: Verdana, Tahoma; /* Optional: Set a font */
+    background: linear-gradient(to right, #ee97ff, #ffbcbc); /* Gradient background */
+  }
+  
+  main {
+    text-align: center; /* Center text inside the main container */
+    padding: 20px; /* Add padding to prevent content from touching edges */
+    box-sizing: border-box; /* Include padding in width/height calculations */
+  }
+
+  img {
+    width: 500px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border: 30px solid #c9ebff; /* Frame color */
+    padding: 30px; /* Space between the image and the frame */
+    background-color: #9cd2ff; /* Background color inside the frame */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for a 3D effect */
+    border-radius: 5px; /* Optional: Rounded corners for the frame */
+  }
+
+  /* Change the font color for the entire page */
+body {
+    color: #400545; /* Dark gray font color */
+    font-size: 19px;
+  }
+  
+  /* Change the font color for headings */
+h2, h3 {
+    color: #57035f; /* Slightly darker gray for headings */
+    font-size: 20px;
+  }
+  
+  /* Change the font color for paragraphs */
+  p {
+    color: #32057b; /* Medium gray for paragraphs */
+    font-size: 16px;
+  }
+  

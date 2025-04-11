@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 
 
 //When loading or error = true or null, it will render those messages. Otherwise nothing.
-const  Gallery = ({tours, setTours, onRemove}) =>{
+const  Gallery = ({tour, setTours, onRemove}) =>{
     const [loading, setLoading] = useState(true)
     const [error,setError] = useState(null)
 
@@ -25,16 +25,16 @@ const  Gallery = ({tours, setTours, onRemove}) =>{
     }, [])
 
     if (loading) {
-        return <h>Loading Page...</h>
+        return <h2>Loading Page...</h2>
     }
 
 
     if (error) {
-        return <h>Error: Try Again</h>
+        return <h2>Error: Try Again</h2>
     }
 
 //If there are no tours loaded, the refresh button will fetch the tours again
-    if(tours.length === 0) {
+    if(tour.length === 0) {
         return  <>
                     <h2>Missing Tours</h2>
                     <div className= 'refreshButton'>
@@ -46,7 +46,7 @@ const  Gallery = ({tours, setTours, onRemove}) =>{
 //Will render gallery with refreshed tours
     return ( 
         <section className='tourGallery'>
-            {tours.map((tour) => {
+            {tour.map((tour) => {
                 return (
                     <TourCard
                         key={tour.id}
