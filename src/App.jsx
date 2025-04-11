@@ -13,7 +13,7 @@ function App(){
   return (
     <main> 
       <h1>Gallery of Tours</h1>
-      <Gallery tour={tour} setTours={setTours} onRemove={tourRemoval} /> 
+      <Gallery tour={Tour} setTours={setTours} onRemove={tourRemoval} /> 
 
     </main>
   )
